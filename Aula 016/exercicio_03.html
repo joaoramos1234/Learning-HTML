@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 16.3</title>
+    <style>
+        div{
+            margin: 20px;
+            padding: 10px;
+        }
+        .contorno{
+            border:2px solid red;
+        }
+        .fundo{
+            background-color: pink;
+        }
+        .contorno_2.fundo_2{
+            background-color: brown;
+            border: none;
+            
+        }
+        .fundo > .aviso_aviso{
+            background-color: grey;
+        }
+
+        
+        #span_id{
+            background-color: rgb(0, 255, 0);
+            font-size: 1.25rem;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body> 
+    <div class="fundo contorno" id="contorno_id">
+        Toda div deste exemplo possui margin de 20px e padding de 10px.
+    </div>
+    <div class="fundo">
+        <h2>Conteúdo da Página</h2>
+        <ol>
+            <li>Uma classe que atríbui a borda red de 2px.</li>
+            <li>Uma classe que atríbui o fundo pink.</li>
+            <li>Um id que deixa o fundo rgb(0,255,0) e com a fonte com 1.25rem.</li>
+            <li>Duas classes que juntas deixam o fundo brown.</li>
+            <li>Uma classe, que quando dentro de outra específica fica com fundo gray.</li>
+        </ol>
+    </div>
+    <div>
+        <span class="contorno" id="span_id">Lorem</span> ipsum dolor sit amet consectetur adipisicing elit. 
+        Ipsum velit voluptatum doloremque commodi pariatur recusandae voluptatem modi enim fugit, 
+        placeat dolor natus consequuntur, eveniet labore suscipit iste assumenda atque sunt.
+    </div>
+    <div class="contorno">
+        Sou uma div <span class="contorno">"contorno"</span>.
+    </div>
+    <hr>
+    <div class="contorno_2 fundo_2">
+        Sou um aviso simples.
+    </div>
+    <div class="fundo">
+        <p>Sou um aviso</p>
+        <div class="fundo aviso_aviso">
+            Sou um aviso dentro do aviso
+        </div>
+    </div>
+</body>
+</html>

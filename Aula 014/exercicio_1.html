@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 14.1</title>
+    <style>
+        span{
+            padding: 20px 0px 0px 20px;
+            margin-left: 100px;
+            background-color: greenyellow;
+        }
+
+        h3{
+            font-size: 30px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">
+        Título Centrado
+    </h1>
+
+    <div>
+        <p style="border: 2px dotted red;">
+            Sou um parágrafo <span>com um span</span> que possui distâncias internas de 20px da sua borda de cima e da esquerda,
+            <br>
+            e também possui 100px de distância do texto externo da esquerda.
+        </p>
+    </div>
+    <br>
+    <div style="border: 10px inset green; padding: 30px 0px;">
+        <p style="margin: 0px;">
+            Sou outro parágrafto com distância interna de 30px da borda de cima e de baixo.
+        </p>
+    </div>
+
+    <br>
+
+    <div style="border: 3px solid red;
+        background-color: pink;
+        border-radius: 80px;
+        text-align: center;" >
+        <h3>Subtítulo!</h3>
+        <p>
+            Sou uma div com bordas arredondadas e fundo pink.
+        </p>
+    </div>
+
+    <div style="border: 3px solid red;
+        background-color: pink;
+        margin-top: 50px;
+        border-radius: 80px;
+        text-align: center;" >
+        <h3>Subtítulo!</h3>
+        <p>
+            Sou uma div com bordas arredondadas e com 50px de distância da div acima.
+        </p>
+    </div>
+
+    <div style="border: 3px solid red;
+        background-color: pink;
+        border-radius: 80px ;
+        margin-top: -20px;
+        text-align: center;" >
+        <h3>Subtítulo!</h3>
+        <p>
+            Sou uma div com bordas arredondadas e com -20px de distância da div acima.
+        </p>
+    </div>
+</body>
+</html>
